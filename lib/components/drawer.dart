@@ -1,4 +1,4 @@
-import 'package:chat_app/authentication/auth_services.dart';
+import 'package:chat_app/services/authentication/auth_services.dart';
 import 'package:chat_app/pages/settings.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,6 @@ class MyDrawer extends StatelessWidget {
           Column(
             children: [
               //Logo
-
               DrawerHeader(
                   margin: EdgeInsets.zero,
                   padding: EdgeInsets.zero,
