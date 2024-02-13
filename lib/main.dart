@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.light,
+      
       home: const AuthGate(),
     );
   }

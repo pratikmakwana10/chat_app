@@ -4,7 +4,7 @@ class MyTextField extends StatelessWidget {
   final String hintText;
   final bool obscureText;
   final TextEditingController controller;
-  final FocusNode? focusNode ;
+  final FocusNode? focusNode;
   const MyTextField(
       {super.key,
       required this.hintText,
@@ -22,14 +22,15 @@ class MyTextField extends StatelessWidget {
           decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
                 borderSide:
-                    BorderSide(color: Theme.of(context).colorScheme.tertiary)),
+                    BorderSide(color: Theme.of(context).colorScheme.primary)),
             focusedBorder: OutlineInputBorder(
                 borderSide:
                     BorderSide(color: Theme.of(context).colorScheme.primary)),
             fillColor: Theme.of(context).colorScheme.secondary,
             filled: true,
             hintText: hintText,
-            hintStyle: TextStyle(color: Theme.of(context).colorScheme.primary),
+            hintStyle: const TextStyle(color: Colors.white),
+            // Theme.of(context).colorScheme.tertiary),
           )),
     );
   }

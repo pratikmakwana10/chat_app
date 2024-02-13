@@ -1,6 +1,6 @@
-import 'package:chat_app/services/authentication/auth_services.dart';
 import 'package:chat_app/components/common_button.dart';
 import 'package:chat_app/components/text_field.dart';
+import 'package:chat_app/services/authentication/auth_services.dart';
 import 'package:flutter/material.dart';
 
 class LogIn extends StatelessWidget {
@@ -47,8 +47,8 @@ class LogIn extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(Icons.message,
-                  size: 60, color: Theme.of(context).colorScheme.primary),
+              const Icon(Icons.message, size: 60, color: Colors.red),
+              // Theme.of(context).colorScheme.secondary),
               const SizedBox(height: 20),
               Text("Welcome to the Chat App",
                   style: TextStyle(
